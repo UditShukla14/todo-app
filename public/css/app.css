@@ -1,0 +1,91 @@
+.reduced-gap-label {
+    margin-left: -15px; /* Adjust the value as needed */
+}
+#hvac-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: hidden;
+    /* max-height: 0; */
+    opacity: 1;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.hvac-expanded {
+    max-height: 500px; /* Large enough to fit the content */
+
+}
+
+/* Drop zone styling */
+.dropzone {
+    border: 2px dashed black;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+}
+
+.dropzone p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Styling when dragging over the drop zone */
+.dropzone.dragover {
+    background-color: #f0f8ff;
+}
+
+/* Preview styling inside drop zone */
+.preview {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Remove button styling */
+.remove-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* app.css */
+.form-error {
+    color: #dc3545; /* Bootstrap danger color */
+    font-style: italic;
+    font-size: 0.875rem; /* Slightly smaller font size */
+    margin-top: 0.5rem; /* Adjust spacing if needed */
+    margin-bottom: 0.5rem;
+    display: block;
+}
+.nav-link.active {
+    font-weight: bold;
+    color: #000 !important; /* Ensures active link is visibly highlighted */
+    background-color: #343a40; /* Darker background for active state */
+}
